@@ -1,15 +1,49 @@
-<!doctype html><html lang="ta"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>திருமண அழைப்பிதழ் | Easy Invites</title><style>:root{color-scheme:light;--ink:#40252a;--ivory:#fff3e5;--accent:#76152c;--shade:#efddd0;font-family:system-ui,sans-serif;color:var(--ink);background:var(--ivory);scroll-behavior:smooth}
-*{box-sizing:border-box}body{margin:0}a{color:inherit}header,footer{padding:1.1rem clamp(1rem,5vw,4rem);display:flex;justify-content:space-between;align-items:center}header a{text-decoration:none;font-weight:650}footer{font-size:.85rem;border-top:1px solid #40252a27}h1,h2,strong{font-family:Georgia,serif}h1{font-size:clamp(2.7rem,9vw,6.7rem);line-height:1.17;margin:.24em 0}p{line-height:1.65}.eyebrow,small{letter-spacing:.1em;font-size:.85rem}.hero{display:grid;place-items:center;text-align:center;min-height:70svh;padding:3rem 1.15rem;background:radial-gradient(ellipse at 50% 32%,var(--shade) 0%,var(--accent) 160%);color:var(--ink);position:relative;isolation:isolate;overflow:hidden}.hero:before{content:"";position:absolute;inset:1.25rem;border:1px solid #c99a43;pointer-events:none;z-index:-1}.hero.has-image{background:linear-gradient(#24151b8a,#24151bc9),var(--photo) center/cover;color:var(--ivory)}.hero-inner{max-width:56rem;animation:reveal .8s ease both}.hero p{max-width:34rem;margin:0 auto 1.5rem}.action{display:inline-block;border:1px solid currentColor;border-radius:100px;text-decoration:none;padding:.65rem 1rem}.english{--shade:#e8ebd8;--accent:#879477}.telugu{--shade:#ffe5dc;--accent:#d28f81}.kannada{--shade:#ffe9bf;--accent:#c99a43}.hindi{--shade:#f5dce5;--accent:#a95a75}#details{text-align:center;padding:3.2rem 1rem 4rem}h2{font-size:clamp(1.8rem,5vw,3rem);margin-top:0}.date{font-weight:650}.audio:not([hidden]){display:grid;gap:.6rem;justify-items:center;margin-top:1.5rem}audio{max-width:100%}
-header{justify-content:center;font-family:Georgia,serif;letter-spacing:.12em}
-.hero{min-height:76svh;background:linear-gradient(#25161669,#251616cf),url("cover.jpg") center/cover;color:var(--ivory)}
-.hero:before{inset:clamp(.75rem,2vw,2rem)}.hero-inner{padding:1.3rem;max-width:min(100%,56rem)}
-@media(max-width:480px){.hero{min-height:70svh}h1{font-size:clamp(2rem,9vw,3.2rem)}}
-.eyebrow{font-size:clamp(.9rem,2.3vw,1.1rem)}#details{padding:4rem 1rem;background:var(--shade)}
-.details-card{max-width:35rem;margin:auto;padding:2.4rem 1.2rem;background:var(--ivory);border:1px solid #c99a43}
-.date{font-size:1.15rem}.closing{margin-top:1.6rem;color:#76152c}footer{justify-content:center;text-align:center}
-@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;scroll-behavior:auto!important}}
-</style><body class="tamil"><header>Easy Invites</header>
- <main><section class="hero"><div class="hero-inner"><div class="eyebrow">திருமண அழைப்பிதழ்</div><h1>யாழினி &amp; ஆதவன்</h1><p>எங்கள் திருமண விழாவிற்கு உங்களை அன்புடன் அழைக்கிறோம்.</p><a class="action" href="#details">விழா விவரங்கள் ↓</a></div></section>
- <section id="details"><div class="details-card"><h2>விழா விவரங்கள்</h2><p class="date">15 பிப்ரவரி 2027 · காலை 10:00</p><p>மலர் மண்டபம் · சென்னை</p><p class="closing">அன்புடன் வரவேற்கிறோம்</p></div></section></main>
- <footer>Easy Invites · இது ஒரு மாதிரி அழைப்பிதழ்.</footer></body></html>
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Invites வழங்கும் தமிழ் திருமண அழைப்பிதழ்.">
+<title>யாழினி &amp; ஆதவன் · திருமண அழைப்பிதழ்</title>
+<link rel="stylesheet" href="style.css">
+<script src="doors.js" defer></script>
+</head>
+<body>
+<div id="entrance" class="entrance" hidden>
+<div class="door left"></div><div class="door right"></div>
+<div class="seal"><span class="seal-ornament" aria-hidden="true">✦</span><p class="eyebrow">குடும்பத்தினருடன் அன்புடன் அழைக்கிறோம்</p><p class="monogram">யாழினி <em>&amp;</em> ஆதவன்</p><p class="seal-date"><time datetime="2027-02-21">ஞாயிறு, 21 பிப்ரவரி 2027</time><br>கோயம்புத்தூர்</p><button id="open" type="button">அழைப்பிதழைத் திறக்கவும் <span aria-hidden="true">→</span></button></div>
+</div>
+<div id="invitation">
+<main>
+<section class="hero"><div><p class="eyebrow">குடும்பத்தினருடன் அன்புடன் அழைக்கிறோம்</p><h1 tabindex="-1">யாழினி <em>&amp;</em> ஆதவன்</h1><p class="hero-date"><time datetime="2027-02-21">ஞாயிறு, 21 பிப்ரவரி 2027</time> · கோயம்புத்தூர்</p><a class="button light" href="#schedule">திருமண விவரங்கள் ↓</a></div></section>
+<section class="shell welcome"><p class="eyebrow">அன்பான அழைப்பு</p><h2>எங்கள் மகிழ்ச்சியில் பங்கேற்க வாருங்கள்</h2><p>காலையில் நடைபெறும் திருமணத்திலும், அதைத் தொடர்ந்து நடைபெறும் மதிய விருந்திலும் கலந்து கொள்ளுங்கள். மறுநாள் மாலை வரவேற்பு விழாவிலும் உங்களை அன்புடன் எதிர்பார்க்கிறோம்.</p></section>
+<section class="shell gallery" aria-label="திருமணப் புகைப்படங்கள்"><img src="ira-and-vihaan.jpg" alt="மல்லிகைப் பூக்களுக்குக் கீழே யாழினியும் ஆதவனும்" loading="lazy"><img src="garland-exchange.jpg" alt="மணமக்கள் மாலை மாற்றும் தருணம்" loading="lazy"></section>
+
+<section class="countdown" id="countdown" aria-labelledby="countdown-title" hidden><div class="shell">
+<h2 id="countdown-title">திருமணத்திற்கு இன்னும்</h2>
+<div class="countdown-grid" role="timer" aria-label="திருமணம் தொடங்குவதற்கு மீதமுள்ள நேரம்">
+<div><strong data-unit="days">00</strong><span>நாட்கள்</span></div>
+<div><strong data-unit="hours">00</strong><span>மணி</span></div>
+<div><strong data-unit="minutes">00</strong><span>நிமிடங்கள்</span></div>
+<div><strong data-unit="seconds">00</strong><span>விநாடிகள்</span></div>
+</div><p id="countdown-status">திருமண முகூர்த்தம் வரை</p>
+</div></section>
+<section class="schedule" id="schedule"><div class="shell"><p class="eyebrow">அனைத்து நேரங்களும் இந்திய நேரப்படி</p><h2>திருமண நிகழ்ச்சிகள்</h2><div class="events">
+<article id="marriage"><p class="eyebrow"><time datetime="2027-02-21T09:30:00+05:30">ஞாயிறு, 21 பிப்ரவரி · காலை 9:30</time></p><h3>திருமணம்</h3><p><strong>மல்லிகை திருமண மண்டபம்</strong><br>ஆர். எஸ். புரம், கோயம்புத்தூர்</p><p>திருமணச் சடங்கிலும் மாலை மாற்றும் நிகழ்விலும் கலந்து கொள்ளுங்கள். அதே மண்டபத்தில் மதியம் 12 மணிக்கு விருந்து நடைபெறும்.</p><div class="event-actions"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=RS+Puram%2C+Coimbatore" target="_blank" rel="noopener noreferrer">திருமண இடம் ↗</a><a class="calendar" href="wedding.ics" download>திருமணத்தை நாட்காட்டியில் சேர்க்கவும்</a></div></article>
+<article id="reception"><p class="eyebrow"><time datetime="2027-02-22T18:00:00+05:30">திங்கள், 22 பிப்ரவரி · மாலை 6:00</time></p><h3>வரவேற்பு</h3><p><strong>தாமரை அரங்கம்</strong><br>பெருந்துறை சாலை, ஈரோடு</p><p>மறுநாள் மாலை வரவேற்பில் கலந்து கொண்டு, இரவு விருந்திலும் புகைப்படங்களிலும் எங்களுடன் இணைந்திடுங்கள்.</p><div class="event-actions"><a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Perundurai+Road%2C+Erode" target="_blank" rel="noopener noreferrer">வரவேற்பு இடம் ↗</a><a class="calendar" href="reception.ics" download>வரவேற்பை நாட்காட்டியில் சேர்க்கவும்</a></div></article>
+</div><p class="note">மண்டபப் பெயர்கள் கற்பனையானவை. வரைபடங்கள் அந்தப் பகுதிகளை மட்டும் காட்டுகின்றன.</p></div></section>
+
+<section class="shell couple" aria-labelledby="couple-title">
+<h2 id="couple-title">மணமக்கள்</h2>
+<div class="profiles">
+<article><img src="ira.jpg" alt="மணமகள் யாழினி" loading="lazy" width="764" height="1024"><p class="eyebrow">மணமகள்</p><h3>யாழினி</h3><p>மீரா, அரவிந்த் தம்பதியின் மகள்</p></article>
+<article><img src="vihaan.jpg" alt="மணமகன் ஆதவன்" loading="lazy" width="764" height="1024"><p class="eyebrow">மணமகன்</p><h3>ஆதவன்</h3><p>கவிதா, சுரேஷ் தம்பதியின் மகன்</p></article>
+</div></section>
+<section class="shell guest-info event-guest-info"><h2>விருந்தினர்களுக்கான தகவல்</h2><details><summary>எப்போது வர வேண்டும்?</summary><p>காலை 9:30 மணிக்குத் திருமணம் தொடங்கும். 15 நிமிடங்களுக்கு முன்னதாக வருமாறு கேட்டுக்கொள்கிறோம்.</p></details><details><summary>வரவேற்புக்கு மட்டும் வரலாமா?</summary><p>Yes. Join us at தாமரை அரங்கம் from 6:00 PM on Monday, 22 February.</p></details></section>
+<section class="shell share" id="share" hidden><h2>அழைப்பிதழைப் பகிரவும்</h2><div class="share-actions"><button id="share-link" type="button" hidden>பகிரவும்</button><button id="copy-link" type="button">இணைப்பை நகலெடுக்கவும்</button><a class="button" id="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp வழியாகப் பகிரவும்</a></div><p id="share-status" role="status"></p><input id="manual-link" type="url" aria-label="அழைப்பிதழ் இணைப்பு" readonly hidden></section>
+<section class="closing"><p class="eyebrow">அன்புடன்</p><h2>யாழினி &amp; ஆதவன்</h2><p>உங்கள் வருகையை அன்புடன் எதிர்பார்க்கிறோம்.</p></section>
+</main>
+<footer>Easy Invites · மாதிரித் திருமண அழைப்பிதழ். நிகழ்ச்சி விவரங்கள் கற்பனையானவை.</footer>
+</div>
+</body>
+</html>

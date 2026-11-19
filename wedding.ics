@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Easy Invites//Wedding Sample//EN
+BEGIN:VEVENT
+UID:yazhini-aadhavan-demo-20270221@easyinvites.in
+DTSTAMP:20261119T000000Z
+DTSTART:20270221T040000Z
+DTEND:20270221T060000Z
+SUMMARY:யாழினி மற்றும் ஆதவன் - திருமண விழா
+LOCATION:மல்லிகை திருமண மண்டபம் - கோயம்புத்தூர்
+END:VEVENT
+END:VCALENDAR
